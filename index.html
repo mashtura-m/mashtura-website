@@ -3,15 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mashtura Mazed | Senior Automation Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mashtura Mazed | Senior Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #f4f7f6;
+            --text: #333;
+            --text-light: #666;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .role {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        /* Sections */
+        section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Experience Timeline */
+        .job {
+            margin-bottom: 30px;
+            border-left: 3px solid var(--accent);
+            padding-left: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .company {
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .date {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .job ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        /* Skills Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Project Cards */
+        .project {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .project h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .project a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Education & Footer */
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-light);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+
+    <div class="container">
         <header>
-            <h1>Mashtura Mazed</h1> <div class="role">Senior Software Engineer</div> <div class="contact-info">
+            <h1>Mashtura Mazed</h1> 
+            <div class="role">Senior Software Engineer</div>
+            <div class="contact-info">
                 <a href="mailto:mzmashtura@gmail.com"><i class="fas fa-envelope"></i> mzmashtura@gmail.com</a>
+                <span style="color:#ccc">|</span>
+                <a href="tel:+8801344623992"><i class="fas fa-phone"></i> +880-1344623992</a>
+                <br>
                 <a href="https://linkedin.com/in/mashtura-m" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/mashtura-m" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             </div>
@@ -20,7 +204,8 @@
         <section id="about">
             <h2>Professional Summary</h2>
             <p>
-                Senior Automation Engineer with 5+ years delivering high-performance data pipelines, web scraping solutions, and AI-driven automation tailored for global trade data, customs tariffs, and compliance systems. Proven leadership, measurable onboarding efficiency gains, and cross-functional impact. Recognized for client collaboration excellence. </p>
+                Senior Automation Engineer with 5+ years delivering high-performance data pipelines, web scraping solutions, and AI-driven automation tailored for global trade data, customs tariffs, and compliance systems. Proven leadership, measurable onboarding efficiency gains, and cross-functional impact. Recognized for client collaboration excellence.
+            </p>
         </section>
 
         <section id="skills">
@@ -29,16 +214,17 @@
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">Java</span>
                 <span class="skill-tag">Groovy</span>
+                <span class="skill-tag">HTML/CSS/JS</span>
                 <span class="skill-tag">Selenium</span>
                 <span class="skill-tag">Playwright</span>
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Airflow</span>
-                <span class="skill-tag">AI Chatbots</span>
-                <span class="skill-tag">Prompt Engineering</span>
                 <span class="skill-tag">Web Scraping</span>
                 <span class="skill-tag">N8N Workflow</span>
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Apache Airflow</span>
+                <span class="skill-tag">AI Chatbots</span>
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Docker</span>
             </div>
         </section>
 
@@ -56,7 +242,7 @@
                 <ul>
                     <li><strong>Context:</strong> Took a planned professional hiatus to serve as a primary caregiver for an immediate family member during a significant health event.</li>
                     <li><strong>Skill Acquisition:</strong> Actively prepared for AI/Agentic facilitator roles, focusing on the intersection of Business Intelligence and AI services.</li>
-                    <li><strong>Training:</strong> Completed comprehensive training in Data/AI/ML Engineering via DataCamp.</li>
+                    <li><strong>Certifications & Training:</strong> Completed comprehensive training in Data/AI/ML Engineering via DataCamp, mastering the operational side of AI & Data deployment.</li>
                 </ul>
             </div>
 
@@ -64,16 +250,17 @@
                 <div class="job-header">
                     <div>
                         <div class="job-title">Senior Software Engineer</div>
-                        <div class="company">SEBPO (Client: Moody's Analytics) | Remote, USA</div>
+                        <div class="company">SEBPO | Client: Moody's Analytics (KYC Grid) | USA (Remote)</div>
                     </div>
                     <div class="date">July 2023 – July 2025</div>
                 </div>
                 <ul>
-                    <li>Served as the primary point of contact between development and Moody's data analyst teams, enabling effective collaboration and automation feasibility analysis.</li>
-                    <li>Designed automated scraping solutions for sanctions, PEP, BvD ID, and ICIJ datasets (Orbis, MaxSight), improving data accuracy and coverage.</li>
-                    <li>Led hiring & onboarding for 14 new hires, reducing average ramp-up time by over 52% through structured mentorship.</li>
+                    <li>Served as the primary point of contact between development and Moody's data analyst teams, enabling effective collaboration, automation feasibility analysis, and schema implementation.</li>
+                    <li>Designed automated scraping solutions for sanctions, PEP, BvD ID, and ICIJ datasets, improving data accuracy and coverage (Products: Orbis, MaxSight, Sanction360).</li>
+                    <li>Led hiring & onboarding for 14 new hires, reducing average ramp-up time by over 52% by incorporating real-case scenarios and structured interview tests & mentorship.</li>
                     <li>Implemented AI tools such as AI Chat Bots, Claude, and Cursor.ai to enhance productivity.</li>
                     <li>Created SOPs for client and SEBPO management for audit purposes.</li>
+                    <li><strong>Key Achievement:</strong> Accelerated project delivery speed via AI-assisted automation & resource allocation.</li>
                 </ul>
             </div>
 
@@ -81,38 +268,65 @@
                 <div class="job-header">
                     <div>
                         <div class="job-title">Software Engineer</div>
-                        <div class="company">SEBPO (Client: Moody's Analytics) | Remote, USA</div>
+                        <div class="company">SEBPO | Client: Moody's Analytics (KYC Grid) | USA (Remote)</div>
                     </div>
                     <div class="date">July 2020 – June 2023</div>
                 </div>
                 <ul>
-                    <li>Developed and managed high-volume web scrapers using Java, Groovy, and Python (Pandas).</li>
-                    <li>Collaborated in the design, testing, and maintenance of data pipelines for structured and unstructured datasets.</li>
+                    <li>Developed and managed high-volume web scrapers using Java, Groovy, and Python (Pandas), optimizing data extraction processes.</li>
+                    <li>Collaborated in the design, testing, and maintenance of data pipelines for both structured and unstructured datasets, providing ongoing technical support and bug fixes.</li>
                     <li><strong>Achievement:</strong> Earned Best Employee Award (2022) for leadership and client collaboration excellence.</li>
                 </ul>
             </div>
         </section>
+
         <section id="projects">
             <h2>Pet Project</h2>
-            <p><a href="https://github.com/mashtura-m/GroovyWrightCrawler" target="_blank" rel="noopener"><strong>GroovyWrightCrawler</strong></a> – Modular crawler (JDK17 + Playwright) extracting and transforming data into JSON.</p>
+            <div class="project">
+                <h3>GroovyWrightCrawler</h3>
+                <p>Modular crawler (JDK17 + Playwright) extracting and transforming data into JSON.</p>
+                <br>
+                <a href="https://github.com/mashtura-m/GroovyWrightCrawler" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
+
         <section id="education">
             <h2>Education</h2>
-            <ul>
-                <li><strong>BRAC University, Dhaka</strong> – B.Sc. in Computer Science &amp; Engineering | CGPA: 3.28/4.0 (2019)</li>
-                <li><strong>Viqarunnisa Noon School &amp; College</strong> – Higher Secondary Certificate (HSC), Science | GPA: 5.0/5.0 (2013)</li>
-                <li><strong>Viqarunnisa Noon School &amp; College</strong> – Secondary School Certificate (SSC), Science | GPA: 5.0/5.0 (2011)</li>
-            </ul>
+            <div class="education-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">B.Sc. in Computer Science & Engineering</div>
+                        <div class="company">BRAC University, Dhaka</div>
+                    </div>
+                    <div class="date">2019</div>
+                </div>
+                <p>CGPA: 3.28/4.0 (~82%)</p>
+            </div>
+            
+            <div class="education-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Higher Secondary Certificate (HSC) & SSC</div>
+                        <div class="company">Viqarunnisa Noon School & College</div>
+                    </div>
+                </div>
+                <p>HSC Science (GPA 5.0/5.0) | 2013</p>
+                <p>SSC Science (GPA 5.0/5.0) | 2011</p>
+            </div>
         </section>
-        <section id="references">
-            <h2>Countries</h2>
-            <p>USA, EU &amp; Bangladesh</p>
+
+        <section id="misc">
+            <h2>Target Locations</h2>
+            <p>USA, EU (Germany), Canada & Bangladesh</p>
+            <br>
             <h2>References</h2>
-            <p>Available upon request.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025&nbsp;Mashtura&nbsp;Mazed&nbsp;|&nbsp;All rights reserved.</p>
-    </footer>
+            <p>References will be provided upon request.</p>
+         </section>
+
+        <footer>
+            <p>&copy; 2025 Mashtura Mazed. Hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
